@@ -75,6 +75,24 @@ The plushies from the Alta Commons map as a stand-alone resource. Drop the folde
 | `ac_plush_cry` | plushie, cry |
 | `ac_plush_halo` | plushie, halo |
 | `ac_plush_heart` | plushie, heart |
+| `ac_plush_ox` | plushie, ox |
+| `ac_plush_ox_adventurer` | plushie, ox adventurer |
+| `ac_plush_ox_dev` | plushie, ox dev |
+| `ac_plush_ox_happy` | plushie, ox happy |
+| `ac_plush_ox_mischief` | plushie, ox mischief |
+| `ac_plush_ox_resting` | plushie, ox resting |
+| `ac_plush_ox_sleepy` | plushie, ox sleepy |
+| `ac_plush_ox_surprised` | plushie, ox surprised |
+| `ac_plush_ox_utility` | plushie, ox utility |
+| `ac_plush_ox_veteran` | plushie, ox veteran |
+| `ac_plush_ox_wild` | plushie, ox wild |
+| `ac_plush_qbcore` | plushie, qbcore |
+| `ac_plush_qduck` | plushie, qduck |
+| `ac_plush_qduck_dev` | plushie, qduck dev |
+| `ac_plush_qduck_gamer` | plushie, qduck gamer |
+| `ac_plush_qduck_royal` | plushie, qduck royal |
+| `ac_plush_qduck_street` | plushie, qduck street |
+| `ac_plush_reaper` | plushie, reaper |
 | `ac_plush_rose` | plushie, rose |
 | `ac_plush_slay` | plushie, slay |
 | `ac_plush_sleepy` | plushie, sleepy |

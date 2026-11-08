@@ -104,8 +104,9 @@ local GATE_A, GATE_B, GATE_Z = vector2(133.382, -415.768), vector2(137.579, -404
 local GATE_C = vector3((133.382 + 137.579) / 2, (-415.768 + -404.524) / 2, GATE_Z)
 local GATE_DIR, GATE_TRAVEL, GATE_MODEL = (GATE_B - GATE_A) / 12.000, 5.970, `ac_egate`
 local leafA, leafB, gateOpen = nil, nil, 0.0
+local GATE_HDG, GATE_SHUT = math.deg(math.atan2(GATE_DIR.y, GATE_DIR.x)), 0.02
 local function placeGate()
-    local a, b = GATE_A - GATE_DIR * gateOpen, GATE_B + GATE_DIR * gateOpen
+    local a, b = GATE_A - GATE_DIR * (gateOpen - GATE_SHUT), GATE_B + GATE_DIR * (gateOpen - GATE_SHUT)
     SetEntityCoordsNoOffset(leafA, a.x, a.y, GATE_Z, false, false, false)
     SetEntityCoordsNoOffset(leafB, b.x, b.y, GATE_Z, false, false, false)
 end
@@ -118,8 +119,8 @@ CreateThread(function()
             while not HasModelLoaded(GATE_MODEL) do Wait(50) end
             leafA = CreateObjectNoOffset(GATE_MODEL, GATE_A.x, GATE_A.y, GATE_Z, false, false, false)
             leafB = CreateObjectNoOffset(GATE_MODEL, GATE_B.x, GATE_B.y, GATE_Z, false, false, false)
-            SetEntityHeading(leafA, 71.66)
-            SetEntityHeading(leafB, 251.66)
+            SetEntityHeading(leafA, GATE_HDG)
+            SetEntityHeading(leafB, GATE_HDG + 180.0)
             FreezeEntityPosition(leafA, true)
             FreezeEntityPosition(leafB, true)
             SetModelAsNoLongerNeeded(GATE_MODEL)
