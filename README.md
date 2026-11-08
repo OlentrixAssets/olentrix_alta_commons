@@ -4,6 +4,9 @@ Welcome to Alta Commons.
 
 Apartments, shops, offices, a rose tunnel, and far too many plushies, sitting on what used to be a perfectly good construction site.
 
+> [!NOTE]
+> This is still a work in progress and more updates are coming, but I wanted to get what I've got out there and hear what you think. Feedback is welcome.
+
 ![](images/1.png)
 
 ## Download
